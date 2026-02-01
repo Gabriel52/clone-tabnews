@@ -1,4 +1,4 @@
-import database from '../../../../infra/database.js';
+import database from 'infra/database.js';
 
 async function status(_request, response){
   const result = await database.query('SELECT 1 + 1;')
@@ -9,4 +9,4 @@ async function status(_request, response){
   });
 }
 
-export default status; 
+export default status;
